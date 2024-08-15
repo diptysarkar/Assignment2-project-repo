@@ -4,14 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gymnasium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    
 </head>
-<body>
+<body id="background" >
     <header>
-
+       <!--nav section start-->
+         <section class="nav-section">
+            <div class="nav-section1">
+                <h2><em>Fitness</em></h2>
+            </div>
+            <div class="nav-section2">
+                <div class="home">Home</div>
+                <div>Service</div>
+                <div>Contact</div>
+                <div>About</div>
+            </div>
+         </section>
+       <!--nav section end-->
+        <!--banner section start-->
+         <section class="banner-section">
+            <div class="banner-section1">
+                <h1>Get body in <br><span id="playwrite-cu-font">shape</span> & stay <br>healthy</h1>
+                <p class="para-text">A huge selection of health and fitness content, healthy recipes <br>and transformation stories to help you get fit and stay fit!</p>
+                <button class="join-btn">Join Club Now!</button>
+                <button class="download-btn">Downlode App</button>
+            </div>
+            <div>
+                <div class="banner-img">
+                    <img src="images/Images 2.png"/>
+                </div>
+                <div class="card1">
+                    <h2 class="card1-h1">500+</h2>
+                    <p class="para-text1">Free Workout Videos</p>
+                </div>
+                <div class="card2">
+                    <div class="circle"></div>
+                    <div>
+                    <h3>300+</h3>
+                    <p class="para-text1">Video tutorial</p>
+                    </div>
+                </div>
+                
+            </div>
+         </section>
+        <!--banner section end-->
     </header>
-
     <main>
+          <section class="habbit-section">
+            <div class="habbit">
+                <h1>Change Your Habbits</h1>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or<br> access to a gym.</p>
+            </div>
+            <div class="card-4">
+            <div>
+                <img class="img-div" src="images/image 3.png"/>
+                <h2 class="h2">Movement</h2>
+                <P>We believe fitness should be <br>accessible to everyone</P>
+            </div>
+            <div>
+                <img class="img-div" src="images/image 2.png"/>
+                <h2 class="h2">Time</h2>
+                <P>We believe fitness should be <br>accessible to everyone</P>
+            </div>
+            <div>
+                <img class="img-div" src="images/image 4.png"/>
+                <h2 class="h2">Practice</h2>
+                <P>We believe fitness should be <br>accessible to everyone</P>
+            </div>
+            <div>
+                <img class="img-div" src="images/image 5.png"/>
+                <h2 class="h2">Weight loss</h2>
+                <P>We believe fitness should be <br>accessible to everyone</P>
+            </div>
+            </div>
+          </section>
+          <section class="extramile-section">
+              <div class="extramile">
+                 <div class="div">
+                     <h1 class="div-h2">Run an Extra<br> Mile Easily</h1>
+                     <p>If you want to stay healthy,yuo should go to gym everyday. We believe fitness be accessible to everybody, everywhere, regardless of income or access to a gym.</p>
+                     <button class="join-btn">Join Now</button>
+                 </div>
+                 <div class="div1">
+                    <img class="img" src="images/run.jpg"/>
+                 </div> 
+              </div>
+          </section>
+          <div class="bmi-head">
+            <h1 class="div-h2">BMI Calculator</h1>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or<br> access to a gym.</p>
+          </div>
+          <section class="bmi-section">
+            <div class="table-div">
+                  <div class="table-div1">
+                      <h3>BMI Calculator Chart</h3>
+                         <table>
+                            <thead>
+                               <tr>
+                                 <td>BMI</td>
+                                 <td>Weight Status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                              </tr>
+                              <tr>
+                                <td>18.5-24.9</td>
+                                <td>Healthy</td>
+                              </tr>
+                              <tr>
+                                <td>25.0-29.9</td>
+                                <td>Overweight</td>
+                              </tr>
+                              <tr>
+                                <td>30.0-and Above</td>
+                                <td>Obese</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="table-div2">
+                    
+                        <h3>Calculate your BMI</h3>
+                        <p>We believe fitness should be accessible to everyone, everywhere regardless of <br>income or access to a gym.</p>
+                    
+                    
+                        <form class="form-sec">
+                        <input type="number" id="height" name="height" placeholder="Height/cm">
+                        <input type="number" id="weight" name="weight" placeholder="Weight/kg"><br>
+                        <input type="number" id="age" name="age" placeholder="Age">
+                        <select name="sex">
+                        <option value="Sex">Sex</option>
+                        </select><br>
+                        <span id="select"><select name="">
+                            <option value="Select an activity factor">Select an activity factor</option>
+                            </select></span><br>
+                            <button class="cal-btn">Calculate</button>
+                        </form>
+                </div>
+            </div>
+        </section>
+        <section class="team-section">
+            
+            <h1 class="div-h2">Meet Our Team</h1>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <div class="team-div">
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="images/trainer1.png" alt="Jerome Bell">
+                        <div class="trainer-info">
+                            <h5 class="div-h5">Jerome Bell</h5>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="images/trainer2.png" alt="Camreron Williamson">
+                        <div class="trainer-info">
+                            <h5 class="div-h5">Camreron Williamson</h5>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="images/trainer3.png" alt="Darrell Steward">
+                        <div class="trainer-info">
+                            <h5 class="div-h5">Darrell Steward</h5>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="images/trainer4.png" alt="Dianne Russell">
+                        <div class="trainer-info">
+                            <h5 class="div-h5">Dianne Russell</h5>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="images/trainer5.png" alt="Cody Fisher">
+                        <div class="trainer-info">
+                            <h5 class="div-h5">Cody Fisher</h5>
+                            <p>Trainer</p>
+                        </div>
+                    </div>
+
+                    <div class="trainer-grid">
+                        <div class="trainer-card">
+                            <img src="images/trainer6.png" alt="Theresa Webb">
+                            <div class="trainer-info">
+                                <h5 class="div-h5">Theresa Webb</h5>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>  
+        </section>
     </main>
 
     <footer>

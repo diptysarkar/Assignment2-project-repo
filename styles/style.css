@@ -1,0 +1,251 @@
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+@import
+url('https://fonts.cdnfonts.com/css/miama');
+#background{
+    margin:0 auto;
+    background-color: black;
+    
+}
+.nav-section{
+    margin-left:100px;
+    margin-right:100px;
+    display:flex;
+    text-align: center;
+    justify-content:space-between;
+}
+.nav-section1{
+    color:#E6533C;
+    font-weight: 800;
+    size:40px;
+}
+.nav-section2{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color:rgb(222, 217, 217);
+    Width:365px;
+    Height:25px;
+    gap:10px;
+    border:1px solid rgb(63, 59, 59);
+    border-radius: 25px;
+    margin-top:15px;
+    padding-right: 15px;
+    font-size:medium;
+}
+.home{
+    background-color:#E6533C;
+    border-radius: 25px; 
+    padding:4px 8px 4px 8px;
+}
+/** nav section end **/
+/** banner section start **/
+.banner-section{
+    margin-left:100px;
+    margin-right:100px;
+    color:white;
+    display:flex;
+    
+}
+.banner-section1{
+    font-size: 3em;
+}
+.playwrite-cu-font {
+   font-family: 'miama', sans-serif;
+}
+.para-text{
+    font-size:0.3em;
+    weight:400;
+    opacity: 0.5;
+}
+.join-btn{
+    color:white;
+    background-color: #E6533C;
+    border:none;
+    border-radius: 25px;
+    padding:15px 35px 15px 35px;
+}
+.download-btn{
+    color:white;
+    background-color:black;
+    border:1.5px solid rgb(100, 97, 97);
+    border-radius: 25px;
+    padding:15px 35px 15px 35px;
+}
+.banner-img{
+    margin-left:50%;
+    gap: 0px;
+    opacity: 0px;
+}
+.card1{
+    border:0.2px solid rgb(105, 105, 105);
+    border-radius: 10px;
+    background: #4b4949f0;
+    justify-content:center ;
+    align-items: center;
+    gap:5px;
+    width:150px;
+    height:70px;
+    padding:5px 15px 5px 15px;
+    position:relative;
+    right: -115%;
+    top: -58%;
+}
+.card1-h1{
+    font-size:2rem;
+    margin-top:5px;
+    margin-bottom:2px;
+}
+.para-text1{
+    font-size:0.9em;
+    weight:400;
+    opacity: 0.5;
+    margin-bottom:5px;
+}
+.card2{
+    border:0.2px solid rgb(58, 57, 57);
+    border-radius: 10px;
+    background: #3030308A;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    gap:10px;
+    width:150px;
+    height:70px;
+    padding:5px 15px 5px 15px;
+    position:relative;
+    bottom:220px;
+    left:70px;
+}
+.circle{
+    width:40px;
+    height:40px;
+    background-color:#E6533C;
+    border-radius: 100%;
+    position:relative;
+    bottom:-2px;
+}
+/** banner section end **/
+/** habbit section start **/
+.habbit-section{
+    margin-left:100px;
+    margin-right:100px;
+}
+.habbit{
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+    margin-top: -100px;
+    margin-bottom:60px;
+}
+.img-div{
+    border:5px solid rgb(27, 27, 27);
+    border-radius: 100%;
+}
+.card-4{
+    display: flex;
+    justify-content:space-between;
+    text-align:center;
+}
+.h2{
+    color:white;
+    font-size:1em;
+}
+p{
+    color:white;
+    font-size:0.8em;
+    opacity:0.5;
+}
+/**habbit section end **/
+.extramile-section{
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.extramile{
+    display:grid;
+    grid-template-columns: 1fr .5fr;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    background-color:rgb(37, 37, 37);
+    padding: 20px;
+} 
+.div-h2{
+    color:white;
+    font-size:2em;
+}
+.div-h5{
+    color:white;
+    font-size:1em;
+}
+
+.img{
+    width:100%;
+}
+/** table section start **/
+.bmi-section{
+    color:white;
+    background-color:rgb(36, 36, 36);
+}
+.table-div{
+    display:grid;
+    grid-template-columns: .5fr 1fr;
+    justify-content: center;
+    margin-left:100px;
+    margin-right:100px;
+    padding-bottom:80px;
+    padding-top:45px;
+    gap:50px;
+}
+table, tr, td{
+    border:1px solid gray;
+    border-collapse: collapse ;
+    padding:15px 10px 15px 10px;
+}
+thead, tr, td{
+    color:white;
+    opacity:1;
+    font-size: bold;
+}
+tbody, td{
+    font-size:1em;
+    weight:200;
+    opacity: 0.5;
+}
+input, select{
+    background-color: rgb(63, 63, 63);
+    color:#fff;
+    width: 30%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+.cal-btn{
+    color:white;
+    background-color: #E6533C;
+    border:none;
+    border-radius: 25px;
+    padding:15px 35px 15px 35px;
+    margin-top:25px;
+}
+
+/** table section end **/
+/** BMI section start **/
+.bmi-head{
+    text-align:center;
+}
+/** BMI section end **/
+/** team section start **/
+.team-section{
+    margin-left:100px;
+    margin-right:100px;
+    
+}
+.trainer-grid {  
+}
+/** team section end **/
