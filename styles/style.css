@@ -7,7 +7,6 @@ url('https://fonts.cdnfonts.com/css/miama');
 #background{
     margin:0 auto;
     background-color: black;
-    
 }
 .nav-section{
     margin-left:100px;
@@ -20,6 +19,12 @@ url('https://fonts.cdnfonts.com/css/miama');
     color:#E6533C;
     font-weight: 800;
     size:40px;
+}
+.miama{
+    font-family: miama;
+    font-size:5rem;
+    opacity:0.9;
+
 }
 .nav-section2{
     display:flex;
@@ -47,7 +52,6 @@ url('https://fonts.cdnfonts.com/css/miama');
     margin-right:100px;
     color:white;
     display:flex;
-    
 }
 .banner-section1{
     font-size: 3em;
@@ -182,7 +186,6 @@ p{
     color:white;
     font-size:1em;
 }
-
 .img{
     width:100%;
 }
@@ -214,16 +217,19 @@ thead, tr, td{
 tbody, td{
     font-size:1em;
     weight:200;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 input, select{
     background-color: rgb(63, 63, 63);
     color:#fff;
-    width: 30%;
     padding: 10px;
-    margin: 5px 0;
     border: none;
     border-radius: 5px;
+}
+.form-sec{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
 }
 .cal-btn{
     color:white;
@@ -233,7 +239,6 @@ input, select{
     padding:15px 35px 15px 35px;
     margin-top:25px;
 }
-
 /** table section end **/
 /** BMI section start **/
 .bmi-head{
@@ -244,8 +249,21 @@ input, select{
 .team-section{
     margin-left:100px;
     margin-right:100px;
-    
 }
 .trainer-grid {  
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+.trainer-card{
+    border-radius: 10px;
+    overflow:hidden;
+    text-align:center;
+}
+.trainer-card img{
+    width:100%;
+    height:auto;
+    
 }
 /** team section end **/
+
