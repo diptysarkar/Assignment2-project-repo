@@ -1,147 +1,213 @@
 *{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  
 }
-@import
-url('https://fonts.cdnfonts.com/css/miama');
-#background{
-    margin:0 auto;
-    background-color: black;
-}
-.nav-section{
-    margin-left:100px;
-    margin-right:100px;
-    display:flex;
-    text-align: center;
-    justify-content:space-between;
-}
-.nav-section1{
-    color:#E6533C;
-    font-weight: 800;
-    size:40px;
-}
-.miama{
-    font-family: miama;
-    font-size:5rem;
-    opacity:0.9;
-
-}
-.nav-section2{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    color:rgb(222, 217, 217);
-    Width:365px;
-    Height:25px;
-    gap:10px;
-    border:1px solid rgb(63, 59, 59);
-    border-radius: 25px;
-    margin-top:15px;
-    padding-right: 15px;
-    font-size:medium;
-}
-.home{
-    background-color:#E6533C;
-    border-radius: 25px; 
-    padding:4px 8px 4px 8px;
-}
-/** nav section end **/
-/** banner section start **/
-.banner-section{
-    margin-left:100px;
-    margin-right:100px;
-    color:white;
-    display:flex;
-}
-.banner-section1{
-    font-size: 3em;
-}
-.playwrite-cu-font {
-   font-family: 'miama', sans-serif;
-}
-.para-text{
-    font-size:0.3em;
-    weight:400;
-    opacity: 0.5;
-}
-.join-btn{
-    color:white;
-    background-color: #E6533C;
-    border:none;
-    border-radius: 25px;
-    padding:15px 35px 15px 35px;
-}
-.download-btn{
-    color:white;
+body{
     background-color:black;
-    border:1.5px solid rgb(100, 97, 97);
-    border-radius: 25px;
-    padding:15px 35px 15px 35px;
-}
-.banner-img{
-    margin-left:50%;
-    gap: 0px;
-    opacity: 0px;
-}
-.card1{
-    border:0.2px solid rgb(105, 105, 105);
-    border-radius: 10px;
-    background: #4b4949f0;
-    justify-content:center ;
-    align-items: center;
-    gap:5px;
-    width:150px;
-    height:70px;
-    padding:5px 15px 5px 15px;
-    position:relative;
-    right: -115%;
-    top: -58%;
-}
-.card1-h1{
-    font-size:2rem;
-    margin-top:5px;
-    margin-bottom:2px;
-}
-.para-text1{
-    font-size:0.9em;
-    weight:400;
-    opacity: 0.5;
-    margin-bottom:5px;
-}
-.card2{
-    border:0.2px solid rgb(58, 57, 57);
-    border-radius: 10px;
-    background: #3030308A;
-    display:flex;
-    justify-content:center ;
-    align-items: center;
-    gap:10px;
-    width:150px;
-    height:70px;
-    padding:5px 15px 5px 15px;
-    position:relative;
-    bottom:220px;
-    left:70px;
-}
-.circle{
-    width:40px;
-    height:40px;
-    background-color:#E6533C;
-    border-radius: 100%;
-    position:relative;
-    bottom:-2px;
-}
-/** banner section end **/
-/** habbit section start **/
-.habbit-section{
-    margin-left:100px;
-    margin-right:100px;
-}
-.habbit{
-    text-align: center;
     color:white;
-    font-size:1.5rem;
-    margin-top: -100px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+}
+
+.container{
+    max-width:1024px;
+    margin:0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn{
+    padding:8px 25px;
+    border:none;
+    border-radius: 50px;
+    color:white;
+}
+
+.btn.primary{
+    background:#E6533C;
+}
+
+.btn.secondary{
+    background-color: transparent;
+    border:1px solid white;
+}
+
+/*nav section start*/
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0px;
+}
+
+nav .logo{
+    font-size:25px;
+    font-weight:900;
+    color:#E6533C;
+}
+
+nav ul{
+    list-style-type:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    
+    border:1px solid #282828;
+    padding:2px;
+    border-radius: 50px;
+}
+
+nav ul li{
+    padding:4px 15px;
+    font-size:12px;
+}
+
+nav ul li.active{
+    background:#E6533C;
+    border-radius: 50px;
+}
+
+nav .menu-icon{
+    display:none;
+}
+
+@media  screen and (max-width:425px) {
+    nav .menu-icon{
+        display:inline;
+    }
+    nav ul{
+        display:none;
+    }
+    
+}
+
+.banner{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:50px;
+}
+
+.banner-content{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:20px;
+}
+
+.banner-content h1{
+    font-size:60px;
+    font-weight:900;
+}
+
+.banner-content p{
+    font-size:12px;
+    color:rgb(91, 91, 91);
+}
+
+.button-container{
+    display:flex;
+    gap:10px;
+}
+
+.banner-img-container{
+    display:flex;
+    justify-content:end;
+}
+
+.banner-image{
+    width:max-content;
+    position: relative;
+}
+
+.banner-image img{
+    height:500px;
+}
+
+@media screen and (max-width:425px){
+    .banner{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .banner-content h1{
+        font-size:30px;
+        font-weight:600;
+    }
+    
+    .banner-content p{
+        font-size:10px;
+        color:rgb(91, 91, 91);
+    }
+    .banner-img-container{
+        display:flex;
+        justify-content:center;
+    }
+}
+
+.floating-card{
+    position:absolute;
+    background:#35353594;
+    display:flex;
+    padding:5px 10px;
+    gap:10px;
+    align-items:center;
+    border-radius: 5px;
+}
+
+.floating-card h5{
+    font-size:25px;
+    font-weight:900;
+}
+
+.floating-card p{
+    font-size:10px;
+    color:rgb(129, 129, 129);
+}
+
+.floating-card.top{
+    top:25%;
+    right: -2%;
+}
+
+.floating-card.bottom{
+    bottom:20%;
+    left: -20%;
+}
+
+.floating-card .circle{
+    width:30px;
+    height:30px;
+    background:#E6533C;
+    border-radius: 50%;
+}
+
+@media  screen and (max-width:425px) {
+    .floating-card.top{
+        top:25%;
+        right: 0;
+    }
+    
+    .floating-card.bottom{
+        bottom:30%;
+        left: 0;
+    }
+}
+
+/** habbit section start **/
+.container h1{
+    font-size:60px;
+    font-weight:900;
+}
+
+.container p{
+    font-size:12px;
+    color:rgb(91, 91, 91);
+}
+.habit{
+    text-align: center;
+    margin-top:60px;
     margin-bottom:60px;
 }
 .img-div{
@@ -153,22 +219,29 @@ url('https://fonts.cdnfonts.com/css/miama');
     justify-content:space-between;
     text-align:center;
 }
-.h2{
-    color:white;
-    font-size:1em;
+
+.card-4 .h2{
+    font-size:20px;
+    font-weight:600;
 }
-p{
-    color:white;
-    font-size:0.8em;
-    opacity:0.5;
+
+.card-4 p{
+    font-size:12px;
+    color:rgb(91, 91, 91);
 }
-/**habbit section end **/
-.extramile-section{
-    margin-left:100px;
-    margin-right:100px;
-    margin-top:40px;
-    margin-bottom:40px;
+
+@media  screen and (max-width:425px) {
+    .container .habit{
+        text-align:center;
+    }
+    .container .card-4{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
 }
+
+/*extramile section start*/
 .extramile{
     display:grid;
     grid-template-columns: 1fr .5fr;
@@ -176,79 +249,229 @@ p{
     align-items:center;
     border-radius: 10px;
     background-color:rgb(37, 37, 37);
+    margin-top:60px;
     padding: 20px;
 } 
 .div-h2{
     color:white;
     font-size:2em;
 }
-.div-h5{
-    color:white;
-    font-size:1em;
+.div-extramile p{
+    font-size:12px;
+    color:rgb(91, 91, 91);
+    margin-top:20px;
+    margin-bottom:20px;
 }
 .img{
     width:100%;
 }
+
+@media  screen and (max-width:425px) {
+    .extramile{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+}
+
+/*trainings section start*/
+.exercise{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.cards{
+    margin-top:20px;
+}
+
+.exercise .para{
+    color: rgb(91, 91, 91);
+    font-size:12px;
+    margin-top:10px;
+}
+
+.top-row{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1.2fr;
+}
+
+
+.bottom-row{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+}
+
+.card{
+    position:relative;
+    height:200px;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    font-size:12px;
+    font-weight:400;
+}
+.overlay-1{
+    background:#06ffd160;
+    color:black;
+    justify-content:end; 
+}
+.overlay-1 p{
+    color:black;
+}
+
+.overlay-2{
+    background:#FF000060;
+    color:white; 
+}
+.overlay-2 p{
+    color:white;
+}
+
+.overlay-3{
+    background:#00000060;
+    color:white;
+    justify-content:end; 
+}
+.overlay-3 p{
+    color:white;
+}
+
+.overlay-4{
+    background:#00000060;
+    color:black;
+    justify-content:end; 
+}
+.overlay-4 p{
+    color:white;
+}
+
+.overlay-5{
+    background:#42FF0060;
+    color:black;
+    justify-content:end; 
+}
+.overlay-5 p{
+    color:white;
+}
+
+.overlay-6{
+    background:#0047FF60;
+    color:black;
+    justify-content:end; 
+}
+.overlay-6 p{
+    color:white;
+}
+
+@media screen and (max-width:425px) {
+    .card{
+        height:100px;
+    }
+    .top-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .top-row .third{
+        display:none;
+    }
+
+    .bottom-row{
+        grid-template-columns: 0.8fr 1fr;
+    }
+    .bottom-row .first{
+        display:none;
+    }
+}
+
 /** table section start **/
+.bmi-head{
+    justify-content: center;
+    padding:40px 40px;
+}
 .bmi-section{
     color:white;
     background-color:rgb(36, 36, 36);
 }
 .table-div{
     display:grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
     justify-content: center;
-    margin-left:100px;
-    margin-right:100px;
-    padding-bottom:80px;
-    padding-top:45px;
-    gap:50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-table, tr, td{
-    border:1px solid gray;
+.table-div1 h3{
+    padding-bottom:20px;
+}
+table, tr, th, td{
+    border:1px solid rgb(59, 58, 58);
     border-collapse: collapse ;
-    padding:15px 10px 15px 10px;
+    padding:5px 10px;
+    text-align: left;
 }
-thead, tr, td{
-    color:white;
-    opacity:1;
-    font-size: bold;
+.table-div-1 table th, .table-div-1 table td{
+    color:white;              
+    font-size: 600;
 }
+
 tbody, td{
-    font-size:1em;
+    color:gray;
+    font-size:15px;
     weight:200;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 input, select{
     background-color: rgb(63, 63, 63);
-    color:#fff;
+    color:rgb(113, 111, 111);
     padding: 10px;
     border: none;
     border-radius: 5px;
+    width:100%;
 }
 .form-sec{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:10px;
 }
+.span-2{
+    grid-column: span 2;
+}
+.table-div2 p{
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
 .cal-btn{
     color:white;
     background-color: #E6533C;
     border:none;
     border-radius: 25px;
-    padding:15px 35px 15px 35px;
-    margin-top:25px;
+    padding:15px 35px;
+    margin-top:15px;
 }
-/** table section end **/
-/** BMI section start **/
-.bmi-head{
-    text-align:center;
+
+@media screen and (max-width:425px) {
+    .table-div{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
 }
-/** BMI section end **/
-/** team section start **/
+
+/** team section start**/
 .team-section{
-    margin-left:100px;
-    margin-right:100px;
+    
 }
 .trainer-grid {  
     display:grid;
@@ -265,5 +488,9 @@ input, select{
     height:auto;
     
 }
-/** team section end **/
+
+
+
+@import
+url('https://fonts.cdnfonts.com/css/miama');
 
